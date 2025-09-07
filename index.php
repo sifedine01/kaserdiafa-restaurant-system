@@ -26,12 +26,12 @@
     <!-- ABOUT SECTION -->
     <section id="about" style="margin-bottom: 4rem;">
         <h2 style="text-align: center; font-size: 2.5rem; font-weight: 600; color: #e5e5e5; margin-bottom: 3rem;">About Kaser Diafa</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 3rem;">
+        <div class="about-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 3rem;">
             <div>
                 <h3 style="color: #d97706; font-size: 1.5rem; margin-bottom: 1rem;">Welcome to Our Restaurant</h3>
-                <p style="color: #6b7280; line-height: 1.6; margin-bottom: 1.5rem;">Kaser Diafa is a family-owned restaurant that brings the authentic flavors of Moroccan and Mediterranean cuisine to your table. Since 2010, we've been serving delicious meals made with fresh, local ingredients and traditional recipes passed down through generations.</p>
+                <p class="about-desc" style="color: #6b7280; line-height: 1.6; margin-bottom: 1.5rem;">Kaser Diafa is a family-owned restaurant that brings the authentic flavors of Moroccan and Mediterranean cuisine to your table. Since 2010, we've been serving delicious meals made with fresh, local ingredients and traditional recipes passed down through generations.</p>
                 <h4 style="color: #d97706; font-size: 1.25rem; margin-bottom: 1rem;">Our Story</h4>
-                <p style="color: #6b7280; line-height: 1.6;">Founded by the Alami family, Kaser Diafa (meaning "House of Hospitality") was born from a passion for sharing the rich culinary heritage of Morocco. Every dish tells a story of tradition, love, and the warm hospitality that Morocco is famous for.</p>
+                <p class="about-desc" style="color: #6b7280; line-height: 1.6;">Founded by the Alami family, Kaser Diafa (meaning "House of Hospitality") was born from a passion for sharing the rich culinary heritage of Morocco. Every dish tells a story of tradition, love, and the warm hospitality that Morocco is famous for.</p>
             </div>
             <div style="background: #1a1a1a; border-radius: 12px; padding: 3rem; text-align: center; border: 2px solid #333;">
                 <i class="fas fa-utensils" style="font-size: 4rem; color: #d97706; margin-bottom: 1rem;"></i>
@@ -88,26 +88,26 @@
     <!-- CONTACT SECTION -->
     <section id="contact" style="margin-bottom: 4rem;">
         <h2 style="text-align: center; font-size: 2.5rem; font-weight: 600; color: #e5e5e5; margin-bottom: 3rem;">Contact Us</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+        <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
             <div>
                 <h3 style="color: #d97706; font-size: 1.5rem; margin-bottom: 1rem;">Get in Touch</h3>
                 <p style="color: #9ca3af; margin-bottom: 2rem; line-height: 1.6;">Contact us for reservations, questions, or feedback.</p>
                 <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-                    <div style="display: flex; align-items: center; gap: 1rem; background: #1a1a1a; padding: 1.5rem; border-radius: 8px; border: 1px solid #333;">
+                    <div class="contact-card" style="display: flex; align-items: center; gap: 1rem; background: #1a1a1a; padding: 1.5rem; border-radius: 8px; border: 1px solid #333;">
                         <i class="fas fa-map-marker-alt" style="font-size: 1.5rem; color: #d97706;"></i>
                         <div>
                             <h4 style="color: #e5e5e5; margin-bottom: 0.25rem;">Address</h4>
                             <p style="color: #9ca3af; margin: 0;">123 Restaurant Street<br>Casablanca, Morocco</p>
                         </div>
                     </div>
-                    <div style="display: flex; align-items: center; gap: 1rem; background: #1a1a1a; padding: 1.5rem; border-radius: 8px; border: 1px solid #333;">
+                    <div class="contact-card" style="display: flex; align-items: center; gap: 1rem; background: #1a1a1a; padding: 1.5rem; border-radius: 8px; border: 1px solid #333;">
                         <i class="fas fa-phone" style="font-size: 1.5rem; color: #d97706;"></i>
                         <div>
                             <h4 style="color: #e5e5e5; margin-bottom: 0.25rem;">Phone</h4>
                             <p style="color: #9ca3af; margin: 0;">+212 5 22 123 456</p>
                         </div>
                     </div>
-                    <div style="display: flex; align-items: center; gap: 1rem; background: #1a1a1a; padding: 1.5rem; border-radius: 8px; border: 1px solid #333;">
+                    <div class="contact-card" style="display: flex; align-items: center; gap: 1rem; background: #1a1a1a; padding: 1.5rem; border-radius: 8px; border: 1px solid #333;">
                         <i class="fas fa-envelope" style="font-size: 1.5rem; color: #d97706;"></i>
                         <div>
                             <h4 style="color: #e5e5e5; margin-bottom: 0.25rem;">Email</h4>
@@ -123,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div style="background: #1a1a1a; padding: 2rem; border-radius: 12px; border: 1px solid #333;">
+            <div class="contact-form-card" style="background: #1a1a1a; padding: 2rem; border-radius: 12px; border: 1px solid #333;">
                 <h3 style="color: #d97706; font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center;">Send us a Message</h3>
                 <form>
                     <div style="margin-bottom: 1rem;">
@@ -168,15 +168,11 @@
         font-size: 2rem !important;
     }
     
-    .about-content {
-        grid-template-columns: 1fr !important;
-        gap: 2rem !important;
-    }
-    
-    .contact-content {
-        grid-template-columns: 1fr !important;
-        gap: 2rem !important;
-    }
+    .about-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+    .about-desc { font-size: 0.95rem !important; }
+    .contact-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+    .contact-form-card { padding: 1.25rem !important; }
+    .contact-card { padding: 1rem !important; }
     
     .services-grid {
         grid-template-columns: 1fr !important;
