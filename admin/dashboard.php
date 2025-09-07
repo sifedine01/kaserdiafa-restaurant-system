@@ -97,6 +97,7 @@ switch($page) {
     padding: 1rem;
     border-radius: 8px;
     border: 1px solid #333;
+    flex-wrap: wrap;
 }
 
 .admin-nav a {
@@ -153,6 +154,8 @@ switch($page) {
     display: grid;
     gap: 1rem;
 }
+
+.menu-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 
 .order-card,
 .menu-item-card {
@@ -250,6 +253,12 @@ switch($page) {
 
 .checkbox-group input[type="checkbox"] {
     width: auto;
+}
+</style>
+<style>
+@media (max-width: 768px) {
+    .form-grid { grid-template-columns: 1fr; }
+    .admin-content { padding: 1rem; }
 }
 </style>
 </head>
